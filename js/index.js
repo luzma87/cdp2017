@@ -1,11 +1,24 @@
 $(function () {
     var $stage = $(".stage");
 
+    preloadImages();
+
     placeP3Cards($stage);
     placeFeedbackCards($stage);
     placeLearningCards($stage);
 
 });
+
+function preloadImages() {
+    var images = [
+        "img/circuit.jpg",
+        "img/fern.jpg",
+        "img/paper.jpg",
+        "img/sand.jpg",
+        "img/stars.jpg",
+    ];
+    $.preloadImages(images);
+}
 
 function placeCards($stage, settings) {
     for (var i = 0; i < settings.cards; i++) {
