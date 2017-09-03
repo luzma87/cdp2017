@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.stage {
+    background-image: url(../img/sand.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    width: 400px;
+    height: 648px;
+    background-image: url(../img/paper.jpg);
+    background-size: cover;
+    border: solid 1px lightgray;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 3px 3px 13px 0 rgba(0, 0, 0, 0.5);
+    padding: 5px;
+
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+}
+
+.dragging {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.75);
+}
+
+.feedback.back {
+    background-image: url(../img/flowers.jpg);
+}
+
+.learning.back {
+    background-image: url(../img/circuit.jpg);
+}
+
+.p3.back {
+    background-image: url(../img/stars.jpg);
+}
