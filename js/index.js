@@ -22,11 +22,11 @@ function preloadImages() {
 }
 
 function placeCards($stage, settings) {
-    for (var i = settings.cards; i >= 0; i--) {
+    for (var i = settings.cards; i > 0; i--) {
         var $element = $("<div>");
         $element.addClass(settings.type);
 
-        var filename = "cards/" + settings.type + "/card" + (i + 1) + ".html";
+        var filename = "cards/" + settings.type + "/card" + i + ".html";
         loadFile($element, filename, settings.defaultSide);
         makeDraggable($element, settings.type);
         makeClickable($element);
