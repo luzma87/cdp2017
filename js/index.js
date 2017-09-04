@@ -3,9 +3,10 @@ $(function () {
 
     preloadImages();
 
-    placeP3Cards($stage);
-    placeFeedbackCards($stage);
-    placeLearningCards($stage);
+    placeMiscCards($stage);
+    placeIstfCards($stage);
+    // placeFeedbackCards($stage);
+    // placeLearningCards($stage);
 
 });
 
@@ -21,7 +22,7 @@ function preloadImages() {
 }
 
 function placeCards($stage, settings) {
-    for (var i = 0; i < settings.cards; i++) {
+    for (var i = settings.cards; i >= 0; i--) {
         var $element = $("<div>");
         $element.addClass(settings.type);
 

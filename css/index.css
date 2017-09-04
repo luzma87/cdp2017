@@ -4,7 +4,7 @@ body {
 }
 
 .stage {
-    background-image: url(../img/sand.jpg);
+    background-image: url(../img/bg/sand.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -12,35 +12,65 @@ body {
 }
 
 .card {
+    font-family: 'Abel', sans-serif;
+
     width: 400px;
     height: 648px;
-    background-image: url(../img/paper.jpg);
+    background-image: url(../img/bg/paper.jpg);
     background-size: cover;
     border: solid 1px lightgray;
     position: absolute;
     border-radius: 10px;
     box-shadow: 3px 3px 13px 0 rgba(0, 0, 0, 0.5);
     padding: 5px;
-
-    font-family: 'Abel', sans-serif;
 }
 
-h1 {
+.title {
     font-family: 'Francois One', sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 55pt;
+}
+
+h1.card-title {
+    font-family: 'Francois One', sans-serif;
+    position: relative;
+    font-size: 70pt;
+    text-align: center;
 }
 
 .dragging {
     box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.75);
 }
 
-.feedback.back {
-    background-image: url(../img/fern.jpg);
+.bg {
+    background-size: cover;
+    background-position: left;
+    display: flex;
 }
 
-.learning.back {
-    background-image: url(../img/circuit.jpg);
+.back {
+    background-position: center;
 }
 
-.p3.back {
-    background-image: url(../img/stars.jpg);
+.feedback.back, .feedback.bg {
+    background-image: url(../img/bg/fern.jpg);
+    color: #a5ceb3;
+    text-shadow: 0 0 14px rgb(150, 255, 150);
+}
+
+.learning.back, .learning.bg {
+    background-image: url(../img/bg/circuit.jpg);
+    color: #022141;
+    text-shadow: 0 0 14px rgba(150, 150, 255, 1);
+}
+
+.misc.back {
+    background-image: url(../img/bg/stars.jpg);
+}
+
+.istf.back {
+    background-image: url(../img/bg/unicorn.jpg);
 }
