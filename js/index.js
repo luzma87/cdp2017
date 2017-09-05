@@ -5,9 +5,6 @@ $(function () {
 
     placeMiscCards($stage);
     placeIstfCards($stage);
-    // placeFeedbackCards($stage);
-    // placeLearningCards($stage);
-
 });
 
 function preloadImages() {
@@ -44,7 +41,7 @@ function loadFile($element, filename, side) {
 
 function makeDraggable($element, type) {
     $element.draggable({
-        stack : "div." + type,
+        stack : "div",
         start : function () {
             $(this).addClass("dragging");
         },

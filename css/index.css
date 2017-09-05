@@ -83,18 +83,6 @@ h1.card-title {
     background-position: left;
 }
 
-.feedback.back, .feedback.bg {
-    background-image: url(../img/bg/fern.jpg);
-    color: #a5ceb3;
-    text-shadow: 0 0 14px rgb(150, 255, 150);
-}
-
-.learning.back, .learning.bg {
-    background-image: url(../img/bg/circuit.jpg);
-    color: #022141;
-    text-shadow: 0 0 14px rgba(150, 150, 255, 1);
-}
-
 .misc.back {
     background-image: url(../img/bg/stars.jpg);
 }
