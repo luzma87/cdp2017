@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 
-.card {
+.card, .photo-card {
     font-family: 'Abel', sans-serif;
 
     width: 400px;
@@ -23,6 +23,30 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 13px 0 rgba(0, 0, 0, 0.5);
     padding: 5px;
+}
+
+.photo-card {
+    width: 1024px;
+    height: 888px;
+}
+
+.photo {
+    width: 1024px;
+    height: 768px;
+    border-radius: 10px;
+}
+
+.photo-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo-label {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
 }
 
 .title {
@@ -53,6 +77,10 @@ h1.card-title {
 
 .back {
     background-position: center;
+}
+
+.back.has-photo {
+    background-position: left;
 }
 
 .feedback.back, .feedback.bg {

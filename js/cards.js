@@ -5,7 +5,7 @@ function placeMiscCards($stage) {
         deltaTop    : 10,
         deltaLeft   : 10,
         defaultSide : "back",
-        cards       : 5,
+        cards       : 10,
         type        : "misc"
     };
     placeCards($stage, settings);
