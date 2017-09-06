@@ -22,7 +22,7 @@ body {
     position: absolute;
     border-radius: 10px;
     box-shadow: 3px 3px 13px 0 rgba(0, 0, 0, 0.5);
-    padding: 5px;
+    padding: 10px;
 }
 
 .photo-card {
@@ -85,6 +85,7 @@ h1.card-title {
 
 .misc.back {
     background-image: url(../img/bg/stars.jpg);
+    color: whitesmoke;
 }
 
 .istf.back {

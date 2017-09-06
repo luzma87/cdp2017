@@ -28,11 +28,12 @@ function loadFile($element, filename, side) {
 
 function makeDraggable($element, type) {
     $element.draggable({
-        stack : "div",
-        start : function () {
+        stack  : "div." + type,
+        scroll : false,
+        start  : function () {
             $(this).addClass("dragging");
         },
-        stop  : function () {
+        stop   : function () {
             $(this).removeClass("dragging");
         }
     });
