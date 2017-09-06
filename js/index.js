@@ -1,22 +1,9 @@
 $(function () {
     var $stage = $(".stage");
 
-    preloadImages();
-
     placeMiscCards($stage);
     placeIstfCards($stage);
 });
-
-function preloadImages() {
-    var images = [
-        "img/circuit.jpg",
-        "img/fern.jpg",
-        "img/paper.jpg",
-        "img/sand.jpg",
-        "img/stars.jpg",
-    ];
-    $.preloadImages(images);
-}
 
 function placeCards($stage, settings) {
     for (var i = settings.cards; i > 0; i--) {
