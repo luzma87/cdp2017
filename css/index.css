@@ -91,3 +91,7 @@ h1.card-title {
 .istf.back {
     background-image: url(../img/bg/unicorn.jpg);
 }
+
+.istf.back.has-photo {
+    background-size: contain;
+}
