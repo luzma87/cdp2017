@@ -11,11 +11,11 @@ function placeCards($stage, settings) {
         $element.addClass(settings.type);
 
         var filename = "cards/" + settings.type + "/card" + i + ".html";
+
         loadFile($element, filename, settings.defaultSide);
         makeDraggable($element, settings.type);
         makeClickable($element);
-        position($element, settings.baseTop + (i * settings.deltaTop),
-            settings.baseLeft + (i * settings.deltaLeft));
+        position($element, i, settings);
         $stage.append($element);
     }
 }
@@ -28,14 +28,8 @@ function loadFile($element, filename, side) {
 
 function makeDraggable($element, type) {
     $element.draggable({
-        stack  : "div." + type,
-        scroll : false,
-        start  : function () {
-            $(this).addClass("dragging");
-        },
-        stop   : function () {
-            $(this).removeClass("dragging");
-        }
+        stack: "div." + type,
+        scroll: false
     });
 }
 
@@ -52,10 +46,29 @@ function makeClickable($element) {
     });
 }
 
-function position($element, top, left) {
+function position($element, i, settings) {
+    var top = settings.baseTop + (i * settings.deltaTop);
+    var left = 0;
+    var right = 0;
+    if (settings.baseLeft > 0) {
+        left = settings.baseLeft + (i * settings.deltaLeft);
+    }
+    if (settings.baseRight > 0) {
+        right = settings.baseRight + (i * settings.deltaLeft);
+    }
+
     $element.css({
-        position : "absolute",
-        top      : top,
-        left     : left
+        position: "absolute",
+        top: top
     });
+    if (left > 0) {
+        $element.css({
+            left: left
+        });
+    }
+    if (right > 0) {
+        $element.css({
+            right: right
+        });
+    }
 }
