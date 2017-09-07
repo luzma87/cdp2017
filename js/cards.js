@@ -20,7 +20,7 @@ function placeIstfCards($stage) {
         deltaTop: 15,
         deltaLeft: 15,
         defaultSide: "back",
-        cards: 6,
+        cards: 8,
         type: "istf"
     };
     placeCards($stage, settings);
