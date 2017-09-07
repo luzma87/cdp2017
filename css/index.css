@@ -93,5 +93,5 @@ h1.card-title {
 }
 
 .istf.back.has-photo {
-    background-size: contain;
+    background-position: top;
 }
